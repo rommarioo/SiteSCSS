@@ -1,0 +1,30 @@
+body {
+  font-family: var(--second-family);
+  font-weight: 600;
+  line-height: 1.28;
+  color: var(--color-dark-text);
+  background-color: #ffffff;
+}
+
+a,
+button,
+input {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  @include reset-link;
+}
+
+h1 {
+  @include fluid-text(60, 30);
+  font-weight: 400;
+}
+h2 {
+  @include fluid-text(35, 20);
+  font-weight: 500;
+}
+h3 {
+  @include fluid-text(24, 20);
+  font-weight: 600;
+}
