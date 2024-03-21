@@ -8,11 +8,100 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./style/style.css" />
-    <title>Document</title>
+    <title>Paws n` Play</title>
   </head>
   <body>
-    <a href="#">asdasd</a>
-    <header>Hi</header>
-    <button>asd</button>
+    <header class="header">
+      <div class="header__inner container">
+        <div class="header__nav-wrapper">
+          <a href="/" class="header__logo logo">
+            <img
+              class="logo__image"
+              src="./images/Logo.svg"
+              alt="Paws n` Play"
+              width="159"
+              height="32"
+              loading="lazy"
+            />
+          </a>
+          <nav class="header__menu hidden-mobile">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link">Shop</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link">Services</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link">About Us</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link">Blog</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <button class="header__button hidden-mobile" type="button">
+          Get Started
+        </button>
+        <button
+          onclick="mobileOverlay.showModal()"
+          type="button"
+          class="button__burger-menu visible-mobile burger-button"
+        >
+          <span class="visually-hidden">Open navigation menu</span>
+        </button>
+      </div>
+      <div class="header__banner">
+        <div class="header__banner-wrapper container">
+          <h1 class="header__banner-title">
+            Pawsitively Perfect:<br />
+            Where Every Pet's<br />
+            Dream Comes True!
+          </h1>
+          <p class="header__banner-text">
+            Welcome to Paws n’ Play, the ultimate destination for pet lovers!
+            Explore a world of<br />
+            tail-wagging joy and furry companionship with our wide range of
+            products and<br />
+            services. From pampering essentials to playful toys, we're here to
+            make every<br />
+            moment with your pet pawsitively perfect!"
+          </p>
+          <button class="header__banner-button">Shop Now</button>
+        </div>
+      </div>
+    </header>
+
+    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+      <form class="mobile-overlay__close-button-wrapper" method="dialog">
+        <button type="submit" class="mobile-overlay__close-button close-button">
+          <span class="visually-hidden">Close navigation menu</span>
+        </button>
+      </form>
+      <div class="mobile-overlay__body">
+        <ul class="mobile-overlay__list">
+          <li class="mobile-overlay__item">
+            <a href="/" class="mobile-overlay__link">Shop</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a href="/" class="mobile-overlay__link">Services</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a href="/" class="mobile-overlay__link">About Us</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a href="/" class="mobile-overlay__link">Blog</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a href="/" class="mobile-overlay__link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </dialog>
   </body>
 </html>

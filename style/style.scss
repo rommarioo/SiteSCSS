@@ -1,1 +1,4 @@
 @import "mixins", "normalize", "fonts", "globals", "media", "variables", "utils";
+
+@import "./blocks/mobile-overlay", "./blocks/burger-button", "./blocks/header",
+  "./blocks/button", "./blocks/close-button";
