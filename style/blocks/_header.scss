@@ -3,6 +3,9 @@
   background-image: url("../../images/backgroundHeader.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  @include tablet {
+    background-position-x: 55%;
+  }
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -17,14 +20,23 @@
     margin-top: 161px;
     padding-bottom: 240px;
 
+    @include tablet {
+      margin-top: 112px;
+      padding: 0px 27px 81px 27px;
+    }
+
     &-title {
       letter-spacing: 0.02em;
       font-weight: 400;
       line-height: 100%;
+      @include tablet {
+        font-weight: 600;
+        line-height: 130%;
+      }
     }
     &-button {
       @include flex-center;
-      position: relative;
+
       display: flex;
       justify-content: center;
       column-gap: 12px;
@@ -37,17 +49,19 @@
       width: 187px;
       height: 64px;
       white-space: nowrap;
+      @include mobile {
+        margin-top: 50px;
+      }
 
       &::after {
         content: url("../../images/paw-prints.svg");
-        top: 1px;
       }
     }
     &-text {
       font-weight: 600;
-      font-size: 16px;
       line-height: 150%;
       margin-top: 20px;
+      @include fluid-text($max: 16, $min: 14);
     }
   }
   &__nav-wrapper {

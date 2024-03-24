@@ -209,7 +209,7 @@ body {
   font-weight: 600;
   line-height: 1.28;
   color: var(--color-dark);
-  background-color: #b8b2b2;
+  background-color: #ffffff;
 }
 
 a,
@@ -291,15 +291,19 @@ h3 {
   height: 100%;
   border: none;
   margin: 0;
+  margin-left: auto;
+  padding-top: 20px;
 }
 .mobile-overlay:modal {
   max-width: 100%;
   max-height: 100%;
-  margin-left: auto;
 }
 .mobile-overlay__close-button-wrapper {
   display: flex;
   justify-content: flex-end;
+}
+.mobile-overlay__body {
+  margin-top: 20px;
 }
 
 .burger-button {
@@ -331,6 +335,11 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (max-width: 1023px) {
+  .header {
+    background-position-x: 55%;
+  }
+}
 .header__inner {
   display: flex;
   justify-content: space-between;
@@ -347,16 +356,27 @@ h3 {
   margin-top: 161px;
   padding-bottom: 240px;
 }
+@media (max-width: 1023px) {
+  .header__banner {
+    margin-top: 112px;
+    padding: 0px 27px 81px 27px;
+  }
+}
 .header__banner-title {
   letter-spacing: 0.02em;
   font-weight: 400;
   line-height: 100%;
 }
+@media (max-width: 1023px) {
+  .header__banner-title {
+    font-weight: 600;
+    line-height: 130%;
+  }
+}
 .header__banner-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
   display: flex;
   justify-content: center;
   -moz-column-gap: 12px;
@@ -371,15 +391,19 @@ h3 {
   height: 64px;
   white-space: nowrap;
 }
+@media (max-width: 767px) {
+  .header__banner-button {
+    margin-top: 50px;
+  }
+}
 .header__banner-button::after {
   content: url("../../images/paw-prints.svg");
-  top: 1px;
 }
 .header__banner-text {
   font-weight: 600;
-  font-size: 16px;
   line-height: 150%;
   margin-top: 20px;
+  font-size: clamp(14px, 1.1111111111vw, 16px);
 }
 .header__nav-wrapper {
   -moz-column-gap: 50px;
@@ -477,4 +501,117 @@ h3 {
 }
 .close-button::after {
   rotate: -45deg;
+}
+
+.section__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block: 70px;
+}
+@media (max-width: 767px) {
+  .section__body {
+    padding-block: 40px;
+  }
+}
+.section__content {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  border: 0.2px solid grey;
+  padding: 21px;
+}
+@media (max-width: 767px) {
+  .section__content {
+    border: none;
+    margin: 0;
+  }
+}
+.section__tab-list {
+  display: flex;
+  margin-top: 87.5px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+@media (max-width: 1023px) {
+  .section__tab-list {
+    margin: 0;
+  }
+}
+.section__image-container {
+  display: flex;
+  justify-content: center;
+  gap: 17px;
+  margin-top: 40px;
+}
+@media (max-width: 767px) {
+  .section__image-container {
+    flex-direction: column;
+  }
+}
+.section__link {
+  align-self: flex-end;
+}
+.section__title {
+  display: flex;
+  width: 100%;
+  align-self: flex-start;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  border-bottom: 0.2px solid grey;
+}
+.section__title::before {
+  content: url("../../images/paw-prints-alternate.svg");
+}
+.section__sub-title {
+  align-self: flex-start;
+  margin-top: 30px;
+}
+.section__tab-button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  font-size: clamp(15px, 1.3888888889vw, 20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  padding: 10px 20px;
+}
+@media (max-width: 767px) {
+  .section__tab-button {
+    height: 35px;
+    padding: 10px 16px;
+  }
+}
+.section__link {
+  margin-top: 36px;
+}
+.section__tab-button_active {
+  padding: 15px 25px;
+  line-height: 100%;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 5px 4px 11px 0 rgba(0, 0, 0, 0.1);
+  background: linear-gradient(62deg, #101828 0%, #233250 100%);
+}
+@media (max-width: 767px) {
+  .section__tab-button_active {
+    padding: 10px 16px;
+  }
+}
+@media (max-width: 1280px) {
+  .section__image-item {
+    width: 30%;
+    height: auto;
+  }
+}
+@media (max-width: 767px) {
+  .section__image-item {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
