@@ -6,6 +6,8 @@ $tablet: 1023px;
 $mobile: 767px;
 $mobile-above: 768px;
 
+$less-mobile: 550px;
+
 @mixin desktop {
   @media (max-width: $desktop) {
     @content;
@@ -32,6 +34,13 @@ $mobile-above: 768px;
     @content;
   }
 }
+
+@mixin less-mobile {
+  @media (max-width: $less-mobile) {
+    @content;
+  }
+}
+
 @mixin hover {
   @media (hover: hover) {
     &:hover {

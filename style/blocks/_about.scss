@@ -1,0 +1,17 @@
+.about {
+  display: flex;
+  justify-content: center;
+  padding: 48px 18px 18px 18px;
+  gap: 2px;
+  @include desktop {
+    flex-direction: column;
+  }
+  &__text {
+    max-width: 570px;
+    @include fluid-text(21, 15);
+    line-height: 100%;
+    font-weight: 400;
+  }
+  &__images {
+  }
+}
