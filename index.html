@@ -261,7 +261,7 @@
       </section>
       <section class="section container">
         <div class="section__body">
-          <h2 class="section__title">About Us</h2>
+          <h2 class="section__title">Our Team</h2>
           <div class="section__content border-none">
             <div class="our-team">
               <div class="our-team__list">
@@ -389,7 +389,9 @@
       <section class="section container">
         <div class="section__body">
           <h2 class="section__title">Blog</h2>
-          <div class="section__content border-none">
+          <div
+            class="section__content border-none section-padding-none section__content_width"
+          >
             <div class="blog">
               <div class="blog__description">
                 <h2 class="blog__description-title">
@@ -419,15 +421,162 @@
                   Read more
                 </button>
               </div>
-              <div class="blog__video">
-                <video src="" width="608" height="649"></video>
+              <div class="blog__video hidden-mobile">
+                <video
+                  width="608"
+                  height="649"
+                  poster="./images/section-blog/poster.svg"
+                  buffered
+                  preload
+                >
+                  <source src="" type="video/mp4" />
+                  <source src="" type="video/webm" />
+                </video>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <section class="section container section_alternate">
+        <div class="section__body">
+          <h2 class="section__title color-white alternate-icon">Get in touch</h2>
+          <div class="section__content border-none  ">
+            <div class="contact">
+              <form class="contact__form">
+                <div class="contact__form-wrapper">
+                  <div class="contact__form-input">
+                    <label for="first-name">First name</label>
+                    <input
+                      type="text"
+                      id="first-name"
+                      placeholder="First-name"
+                    />
+                  </div>
+                  <div class="contact__form-input">
+                    <label for="last-name">Last name</label>
+                    <input type="text" id="last-name" placeholder="Last name" />
+                  </div>
+                </div>
+                <div class="contact__form-input">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" placeholder="you@company.com" />
+                </div>
+                <div class="contact__form-input">
+                  <label for="last-name">Message</label>
+                  <textarea id="text-area"></textarea>
+                </div>
+                <label for="agree"><input type="checkbox" name="agree" id="agree"
+                  />You agree to our friendly <u>privacy policy.</u
+                    ></label>
+                 <button class="contact__form-button button" type="submit">Send message</button> 
+              </form>
+              <div class="contact__other">
+                <div class="contact__other-row">
+                  <div class="contact__other-row-item">
+                    <img src="./images/section-get-in-touch/mail.svg" alt="Email">
+                    <h3>Email</h3>
+                    <p>Our friendly team is here to help.</p>
+                    <a href="mailto:hello@pawsnplay.com">hello@pawsnplay.com</a>
+                  </div>
+                  <div class="contact__other-row-item">
+                    <img src="./images/section-get-in-touch/message-circle.svg" alt="Live Chat">
+                    <h3>Live Chat</h3>
+                    <p>Our friendly team is here to help.</p>
+                    <a href="/">Start new chat</a>
+                  </div>
+              </div>
+              <div class="contact__other-row">
+                <div class="contact__other-row-item">
+                  <img src="./images/section-get-in-touch/map-pin.svg" alt="Ofice location">
+                  <h3>Office</h3>
+                  <p>Come say hello at our office HQ.</p>
+                  <a href="https://maps.app.goo.gl/syDAeRWDWUnPrVUs8" target="_blank">123, Yaya Abatan st, Ogba Lagos.</a>
+                </div>
+                <div class="contact__other-row-item">
+                  <img src="./images/section-get-in-touch/phone.svg" alt="Phone">
+                  <h3>Phone</h3>
+                  <p>Mon-Fri from 8am to 5pm.</p>
+                  <a href="tel:+234901234384" >+234 901234 384</a>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-
+    <footer class="footer container section_alternate"> 
+      <div class="footer__subscription-row">
+        <div class="footer__subscription-left">
+          <h3>Join our newsletter</h3>
+          <p>Be the first to receive latest updates on promo, sales and offers</p>
+        </div>
+        <div class="footer__subscription-right">
+          <input type="text" name="subscription" id="input-subscription" placeholder="Enter your email">
+          <button type="button" class="footer__button-subscription button">Subscribe</button>
+        </div>
+      </div>
+      <div class="footer__middle">  
+        <div class="footer__middle-description">
+            <h2 class="footer__middle-description-title">Paws n’ Play</h2>
+            <p class="footer__middle-description-text">Where wagging tails and purring hearts reign supreme!</p>
+        </div>
+        <div class="footer__middle-wrapper">
+          <div class="footer__middle-links">
+            <h3 class="footer__middle-links-title">Shop</h3>
+            <a href="/">Pet Adoption</a>
+            <a href="/">Nutrition</a>
+            <a href="/">Pet Care</a>
+            <a href="/">Pet Food</a>
+            <a href="/">Pricing</a>
+          </div>
+          <div class="footer__middle-links">
+            <h3 class="footer__middle-links-title">Company</h3>
+            <a href="/">About us</a>
+            <a href="/">Careers</a>
+            <a href="/">Press</a>
+            <a href="/">News</a>
+            <a href="/">Contact</a>
+          </div>
+          <div class="footer__middle-links">
+            <h3 class="footer__middle-links-title">Services</h3>
+            <a href="/">Grooming</a>
+            <a href="/">Boarding</a>
+            <a href="/">Traaining</a>
+            <a href="/">Vetinary</a>
+            <a href="/">Support</a>
+          </div>
+          <div class="footer__middle-links">
+            <h3 class="footer__middle-links-title">Social</h3>
+            <a href="/">Twitter</a>
+            <a href="/">LinkedIn</a>
+            <a href="/">Facebook</a>
+            <a href="/">AngelList</a>
+            <a href="/">Dribbble</a>
+          </div>
+          <div class="footer__middle-links">
+            <h3 class="footer__middle-links-title">Legal</h3>
+            <a href="/">Terms</a>
+            <a href="/">Privacy</a>
+            <a href="/">Cookies</a>
+            <a href="/">Licenses</a>
+            <a href="/">Settings</a>
+          </div>
+          </div>
+      </div>
+      <div class="footer__lower">
+        <div class="footer__lower-copyright">
+          <p>© 2024 Paws n’ Play. All rights reserved.</p>
+        </div>
+        <div class="footer__lower-socials">
+          <img src="./images/footer/twitter.svg" alt="Twitter">
+          <img src="./images/footer/linkedin.svg" alt="Linkedin">
+          <img src="./images/footer/facebook.svg" alt="Facebook">
+          <img src="./images/footer/github.svg" alt="Github">
+          <img src="./images/footer/like.svg" alt="gesture Like">
+          <img src="./images/footer/basletball.svg" alt="Backetball ball">
+        </div>
+      </div>
+    </footer>
     <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
       <form class="mobile-overlay__close-button-wrapper" method="dialog">
         <button type="submit" class="mobile-overlay__close-button close-button">
