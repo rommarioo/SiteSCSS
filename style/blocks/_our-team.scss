@@ -40,9 +40,21 @@
         display: flex;
         justify-content: center;
       }
+      img {
+        @include hover {
+          border-radius: 10%;
+          transform: scale(1.05);
+
+          transition: all 1s;
+        }
+      }
     }
   }
   &__image {
     height: auto;
+    @include hover {
+      transform: scale(1.05);
+      transition: all 1s;
+    }
   }
 }

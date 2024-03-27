@@ -33,6 +33,9 @@
         @include fluid-text(16, 10);
         line-height: 100%;
         color: #fff;
+        @include hover {
+          color: gray;
+        }
       }
     }
   }

@@ -72,6 +72,9 @@
     @include flex-center;
     height: 50px;
     padding: 10px 20px;
+    @include hover {
+      color: gray;
+    }
     @include mobile {
       height: 35px;
       padding: 10px 16px;
@@ -87,6 +90,10 @@
     border-radius: 8px;
     box-shadow: 5px 4px 11px 0 rgba(0, 0, 0, 0.1);
     background: linear-gradient(62deg, #101828 0%, #233250 100%);
+    @include hover {
+      box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+      color: gray;
+    }
     @include mobile {
       padding: 10px 16px;
     }
@@ -107,9 +114,7 @@
     gap: 15px;
     &-right-side {
       position: relative;
-      .section__service-item {
-        filter: brightness(60%);
-      }
+
       .image-wrapper {
         position: relative;
         &-text {
@@ -118,7 +123,16 @@
           top: 45%;
           left: 50%;
           translate: -50%;
+
           @include fluid-text(50, 24);
+        }
+      }
+      .section__service-item {
+        filter: brightness(60%);
+        @include hover {
+          filter: brightness(80%);
+          transform: scale(1.01);
+          transition: all 0.5s;
         }
       }
     }
@@ -161,6 +175,11 @@
         height: auto;
         object-fit: cover;
         filter: brightness(60%);
+        @include hover {
+          filter: brightness(80%);
+          transform: scale(1.01);
+          transition: all 0.5s;
+        }
       }
     }
   }

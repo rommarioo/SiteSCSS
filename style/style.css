@@ -404,6 +404,18 @@ h3 {
   height: 64px;
   white-space: nowrap;
 }
+@media (hover: hover) {
+  .header__banner-button:hover {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    color: gray;
+  }
+}
+@media (hover: none) {
+  .header__banner-button:active {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    color: gray;
+  }
+}
 @media (max-width: 767px) {
   .header__banner-button {
     margin-top: 50px;
@@ -479,6 +491,18 @@ h3 {
   box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
   white-space: nowrap;
 }
+@media (hover: hover) {
+  .header__button:hover {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    color: gray;
+  }
+}
+@media (hover: none) {
+  .header__button:active {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    color: gray;
+  }
+}
 @media (max-width: 1280px) {
   .header__button {
     height: 35px;
@@ -489,6 +513,18 @@ h3 {
   border-radius: 8px;
   font-weight: 600;
   white-space: nowrap;
+}
+@media (hover: hover) {
+  .button:hover {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    color: gray;
+  }
+}
+@media (hover: none) {
+  .button:active {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    color: gray;
+  }
 }
 
 .close-button {
@@ -601,6 +637,16 @@ h3 {
   height: 50px;
   padding: 10px 20px;
 }
+@media (hover: hover) {
+  .section__tab-button:hover {
+    color: gray;
+  }
+}
+@media (hover: none) {
+  .section__tab-button:active {
+    color: gray;
+  }
+}
 @media (max-width: 767px) {
   .section__tab-button {
     height: 35px;
@@ -617,6 +663,18 @@ h3 {
   border-radius: 8px;
   box-shadow: 5px 4px 11px 0 rgba(0, 0, 0, 0.1);
   background: linear-gradient(62deg, #101828 0%, #233250 100%);
+}
+@media (hover: hover) {
+  .section__tab-button_active:hover {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    color: gray;
+  }
+}
+@media (hover: none) {
+  .section__tab-button_active:active {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    color: gray;
+  }
 }
 @media (max-width: 767px) {
   .section__tab-button_active {
@@ -643,9 +701,6 @@ h3 {
 .section__service-right-side {
   position: relative;
 }
-.section__service-right-side .section__service-item {
-  filter: brightness(60%);
-}
 .section__service-right-side .image-wrapper {
   position: relative;
 }
@@ -656,6 +711,23 @@ h3 {
   left: 50%;
   translate: -50%;
   font-size: clamp(24px, 3.4722222222vw, 50px);
+}
+.section__service-right-side .section__service-item {
+  filter: brightness(60%);
+}
+@media (hover: hover) {
+  .section__service-right-side .section__service-item:hover {
+    filter: brightness(80%);
+    transform: scale(1.01);
+    transition: all 0.5s;
+  }
+}
+@media (hover: none) {
+  .section__service-right-side .section__service-item:active {
+    filter: brightness(80%);
+    transform: scale(1.01);
+    transition: all 0.5s;
+  }
 }
 @media (max-width: 1280px) {
   .section__service {
@@ -700,6 +772,20 @@ h3 {
   -o-object-fit: cover;
      object-fit: cover;
   filter: brightness(60%);
+}
+@media (hover: hover) {
+  .section__service-left-side .section__service-item:hover {
+    filter: brightness(80%);
+    transform: scale(1.01);
+    transition: all 0.5s;
+  }
+}
+@media (hover: none) {
+  .section__service-left-side .section__service-item:active {
+    filter: brightness(80%);
+    transform: scale(1.01);
+    transition: all 0.5s;
+  }
 }
 
 .section_alternate {
@@ -797,8 +883,34 @@ h3 {
     justify-content: center;
   }
 }
+@media (hover: hover) {
+  .our-team__item-socials img:hover {
+    border-radius: 10%;
+    transform: scale(1.05);
+    transition: all 1s;
+  }
+}
+@media (hover: none) {
+  .our-team__item-socials img:active {
+    border-radius: 10%;
+    transform: scale(1.05);
+    transition: all 1s;
+  }
+}
 .our-team__image {
   height: auto;
+}
+@media (hover: hover) {
+  .our-team__image:hover {
+    transform: scale(1.05);
+    transition: all 1s;
+  }
+}
+@media (hover: none) {
+  .our-team__image:active {
+    transform: scale(1.05);
+    transition: all 1s;
+  }
 }
 
 .blog {
@@ -911,6 +1023,16 @@ h3 {
   font-size: clamp(10px, 1.1111111111vw, 16px);
   line-height: 100%;
   color: #fff;
+}
+@media (hover: hover) {
+  .contact__other-row a:hover {
+    color: gray;
+  }
+}
+@media (hover: none) {
+  .contact__other-row a:active {
+    color: gray;
+  }
 }
 .contact__form {
   background-color: white;
@@ -1061,6 +1183,16 @@ h3 {
 .footer__middle-links {
   display: flex;
   flex-direction: column;
+}
+@media (hover: hover) {
+  .footer__middle-links a:hover {
+    color: #fff;
+  }
+}
+@media (hover: none) {
+  .footer__middle-links a:active {
+    color: #fff;
+  }
 }
 .footer__middle-wrapper {
   display: flex;

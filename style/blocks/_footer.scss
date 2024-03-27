@@ -78,6 +78,11 @@
     &-links {
       display: flex;
       flex-direction: column;
+      a {
+        @include hover {
+          color: #fff;
+        }
+      }
     }
     &-wrapper {
       display: flex;
