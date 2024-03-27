@@ -1,0 +1,128 @@
+.header {
+  padding-top: 18px;
+  background-image: url("../../images/backgroundHeader.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include tablet {
+    background-position-x: 55%;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 32px;
+    @include tablet {
+      padding-inline: 16px;
+    }
+  }
+  &__banner {
+    color: #fff;
+    margin-top: 161px;
+    padding-bottom: 240px;
+
+    @include tablet {
+      margin-top: 112px;
+      padding: 0px 27px 81px 27px;
+    }
+
+    &-title {
+      letter-spacing: 0.02em;
+      font-weight: 400;
+      line-height: 100%;
+      @include tablet {
+        font-weight: 600;
+        line-height: 130%;
+      }
+    }
+    &-button {
+      @include flex-center;
+      @include hover {
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        color: gray;
+      }
+      display: flex;
+      justify-content: center;
+      column-gap: 12px;
+      color: #fff;
+      background-color: transparent;
+      border: 1px solid white;
+      border-radius: 50px;
+      padding: 16px 28px;
+      margin-top: 30px;
+      width: 187px;
+      height: 64px;
+      white-space: nowrap;
+      @include mobile {
+        margin-top: 50px;
+      }
+
+      &::after {
+        content: url("../../images/paw-prints.svg");
+      }
+    }
+    &-text {
+      font-weight: 600;
+      line-height: 150%;
+      margin-top: 20px;
+      @include fluid-text($max: 16, $min: 14);
+    }
+  }
+  &__nav-wrapper {
+    column-gap: 50px;
+    @include flex-center;
+  }
+  &__menu-list {
+    display: flex;
+    column-gap: 32px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+
+    @include desktop {
+      column-gap: 25px;
+    }
+  }
+  &__menu-link {
+    display: inline-flex;
+    align-items: center;
+    height: 32px;
+    position: relative;
+    color: #fff;
+
+    @include hover {
+      &::after {
+        width: 100%;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      translate: -50%;
+      width: 0;
+      height: 1px;
+      background-color: currentColor;
+      transition-duration: inherit;
+    }
+  }
+  &__button {
+    @include flex-center;
+    width: 124px;
+    height: 44px;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    padding: 10px 18px;
+    box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+    white-space: nowrap;
+    @include hover {
+      box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+      color: gray;
+    }
+
+    @include desktop {
+      height: 35px;
+    }
+  }
+}

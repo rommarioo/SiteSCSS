@@ -1,0 +1,12 @@
+.burger-button {
+  @include reset-button;
+  @include square(30px);
+  background-image: url("../../images/burgerIcon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include hover {
+    background-color: var(--color-accent);
+    border-radius: 10px;
+  }
+}
