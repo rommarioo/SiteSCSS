@@ -344,7 +344,7 @@ h3 {
 
 .header {
   padding-top: 18px;
-  background-image: url("../../images/backgroundHeader.svg");
+  background-image: url("https://rommarioo.github.io/SiteSCSS/images/backgroundHeader.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
