@@ -88,10 +88,9 @@
     line-height: 100%;
     color: #fff;
     border-radius: 8px;
-    box-shadow: 5px 4px 11px 0 rgba(0, 0, 0, 0.1);
+
     background: linear-gradient(62deg, #101828 0%, #233250 100%);
     @include hover {
-      box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
       color: gray;
     }
     @include mobile {
