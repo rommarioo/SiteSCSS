@@ -305,7 +305,7 @@ h3 {
   border: none;
   margin: 0;
   margin-left: auto;
-  padding-top: 20px;
+  padding: 0;
 }
 .mobile-overlay:modal {
   max-width: 100%;
@@ -325,7 +325,7 @@ h3 {
   border: none;
   width: 30px;
   aspect-ratio: 1;
-  background-image: url("../../images/burgerIcon.svg");
+  background-image: url("../images/burgerIcon.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -344,7 +344,7 @@ h3 {
 
 .header {
   padding-top: 18px;
-  background-image: url("https://rommarioo.github.io/SiteSCSS/images/backgroundHeader.svg");
+  background-image: url("../images/backgroundHeader.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -422,7 +422,7 @@ h3 {
   }
 }
 .header__banner-button::after {
-  content: url("../../images/paw-prints.svg");
+  content: url("../images/paw-prints.svg");
 }
 .header__banner-text {
   font-weight: 600;
@@ -620,7 +620,7 @@ h3 {
   border-bottom: 0.2px solid grey;
 }
 .section__title::before {
-  content: url("../../images/paw-prints-alternate.svg");
+  content: url("../images/paw-prints-alternate.svg");
 }
 .section__sub-title {
   align-self: flex-start;
@@ -810,7 +810,7 @@ h3 {
 }
 
 .alternate-icon::before {
-  content: url("../../images/paw-prints.svg");
+  content: url("../images/paw-prints.svg");
 }
 
 .about {
@@ -1212,7 +1212,7 @@ h3 {
   color: #fff;
 }
 .footer__middle-description-title::before {
-  content: url("../../images/paw-prints.svg");
+  content: url("../images/paw-prints.svg");
 }
 .footer__middle-description-text {
   font-weight: 400;

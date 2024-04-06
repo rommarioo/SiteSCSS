@@ -1,6 +1,6 @@
 .header {
   padding-top: 18px;
-  background-image: url("../../images/backgroundHeader.svg");
+  background-image: url("../images/backgroundHeader.svg");
   background-repeat: no-repeat;
   background-size: cover;
   @include tablet {
@@ -57,7 +57,7 @@
       }
 
       &::after {
-        content: url("../../images/paw-prints.svg");
+        content: url("../images/paw-prints.svg");
       }
     }
     &-text {
